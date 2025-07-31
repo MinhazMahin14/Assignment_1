@@ -2,6 +2,25 @@
 box-sizing: border-box;
 }
 
+
+/* font style */
+
+.exo-2 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .text-center
+{
+    justify-items: center;
+} */
+.header-sec
+{
+    display: flex;
+}
+
 body {
 margin: 0;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,11 +51,12 @@ button:hover, a.button:hover {
 background-color: #2b37c5;
 }
 
-.container {
-max-width: 1080px;
+.banner-container {
+max-width: 1280px;
 margin: 0 auto;
 padding-left: 1rem;
 padding-right: 1rem;
+background: url(../images/Hero-bg.png);
 }
 
 h1, h2, h3 {
@@ -55,13 +75,10 @@ font-size: 1rem;
 
 /* banner.png */
 header.banner {
-background: url(./images/Hero-bg.png) no-repeat center/contain;
 /* position: relative; */
 padding: 3rem 1rem 6rem;
-/* justify-content: space-between; */
+justify-content: space-between;
 align-items: center;
-/* flex-wrap: wrap; */
-/* background-color: #F7F9FF; */
 }
 
 header.banner .logo {
@@ -84,13 +101,14 @@ min-width: 100px;
 
 header.banner .headline {
 width: 100%;
-max-width: 700px;
+/* max-width: 700px; */
 text-align: center;
-font-size: 2.25rem;
-font-weight: 900;
+font-size: 60px;
+/* font-weight: 900; */
 margin: 2rem auto 1.5rem;
 color: #12131e;
 line-height: 1.2;
+padding: 10px;
 }
 
 header.banner .btn-focus {
@@ -158,7 +176,7 @@ background-color: #3a45cc;
 
 section.action .image-wrapper {
 flex: 1 1 320px;
-max-width: 420px;
+max-width: 600px;
 display: flex;
 justify-content: flex-end;
 }
@@ -459,49 +477,4 @@ transition: color 0.3s ease;
 
 footer.footer nav a:hover {
 color: #4C60FF;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-header.banner {
-flex-direction: column;
-}
-header.banner nav {
-text-align: center;
-margin-top: 1rem;
-}
-header.banner .headline {
-font-size: 1.75rem;
-max-width: 100%;
-}
-section.action {
-flex-direction: column;
-text-align: center;
-}
-section.action .text-content {
-padding-right: 0;
-max-width: 100%;
-}
-section.action .image-wrapper {
-justify-content: center;
-max-width: 100%;
-margin-top: 2rem;
-}
-section.productive-users .stats {
-flex-direction: column;
-gap: 1.75rem;
-}
-section.review .cards {
-flex-direction: column;
-gap: 1.5rem;
-}
-section.ready-to-focus .image-wrapper {
-max-width: 100%;
-}
-section.newsletter {
-flex-direction: column;
-}
-form.newsletter-form {
-max-width: 100%;
-}
 }
